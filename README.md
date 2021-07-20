@@ -1,32 +1,38 @@
-# Комментарии пользователей.
+# User comments
 
-## Введение
-Мы постоянно пользуемся социальными сетями, читаем комментарии на форумах, отзывы о компаниях, пишем комментарии друзьям, отвечаем на комментарии других. Вы когда-нибудь задумывались, как хранить такую информацию в базе данных? Например, человек оставляет какой-нибудь пост. Другие люди его комментируют, оставляют лайки, могут даже сделать репост. Но на этом боль не заканчивается... Ведь на комментарии можно еще и отвечать, потом лайкать эти комментарии, ответы на них, ответы на ответы на ответы и так до бесконечности. Но не все так страшно. Этот кейс достаточно распространен, и есть много различных решений данной задачи в открытом доступе. Однако мы учимся, а поэтому попробуйте придумать свою реализацию, никуда при этом не подглядывая. 
+## Introduction
+
+We're constantly using social networks: reading forum comments or company reviews, writing comments to friends, responding to others' comments. Have you ever wondered how to store this information in a database? For example, a person leaves a post and others comment, leave likes, or repost. But it doesn't end there... You can also reply, like these comments, like the replies to these comments, like the replies to the replies to these comments, and so on to infinity (it seems scarier than it is). This infinite loop is quite common, and there are many different solutions online, but please create your own before looking elsewhere.
+
 
 ## Releases
 
-### Release 0. Проектирование!
-Для определенности договоримся, что мы разрабатываем базу данных для социальной сети. В базе данных необходимо отобразить следующие сущности *(для каждой сущности создавать отдельную модель не нужно!)*:
+### Release 0. Design!
 
-- пользователи, 
-- посты, 
-- комментарии, 
-- ответы на комментарии, 
-- лайки.
+Let's develop a social network database with the following entities *(you don't need a separate model for each entity!)*:
+- users
+- posts
+- comments
+- replies to comments
+- likes
 
-Подумайте над архитектурой самостоятельно на протяжении 20 минут (с листочком и ручкой), а затем обсудите архитектуру вместе со своими одногруппниками. Скорее всего у всех будут свои варианты решения проблемы, попробуйте выбрать наиболее оптимальное для вас. Помните, что нет единственно правильного решения - есть наиболее подходящие для определенных ситуаций.
+Take 20 minutes to think about the architecture (independently with a pen and paper), then consult with your classmates. Listen to their solutions and choose the most optimal one; there's no one right solution, but try to find the most suitable solution for this situation.
 
-### Release 1. Схемы, модели, данные
-БД спроектирована, однако сейчас она хранится только у вас в голове, ну и на листе бумаги. Теперь надо переложить все на схемы и модели. Когда это будет готово, создайте seeder и напишите в нем скрипт, наполняющий базу данных какими-либо начальными значениями. Можете использовать для этого библиотеку `faker.js`. 
+### Release 1. Schemes, models, data
 
-### Release 2. Запросы
-Используйте методы своих моделей (стандартные или напишите свои) чтобы решить следующие задачи:
-- Вывод всех комментариев к указанному посту.
-- Вывод всех ответов на указанный комментарий.
-- Вывод всех пользователей, которым понравился пост.
-- Написать от имени пользователя комментарий к определенному посту.
-- Ответить от имени пользователя на определенный комментарий.
+You designed the database, but this information isn't accessible to a computer: it's in your head or on a piece of paper. Now, shift everything to schemas and models. Now, create a seeder file and populate the database with initial values. The `faker.js` library may be helpful.
 
-## Заключение
+### Release 2. Requests
+Use your models' methods (write your own or use some standard ones) to:
 
-Вы попрактиковались в проектировании БД, подготовке структуры БД для приложения, написании основных запросов для вполне реальной базы данных. Проектирование является самой сложной частью работы с БД, кроме того, подход к проектированию может кардинально отличаться в зависимости от типов баз данных. Если вы столкнулись с проблемами в release 0, то рекомендуем вам потратить побольше времени на изучение данной темы. Можете посмотреть [видео на youtube](https://www.youtube.com/watch?v=N-sAZB9G9zI), либо почитать статьи по проектированию [вот эту](https://habr.com/ru/post/535588) и [эту](https://intuit.ru/studies/courses/1001/297/lecture/7409) - в них тема проектирования рассматривается достаточно подробно, с примерами, есть даже раздел `Use Cases`, который может быть вам очень интересен и полезен.
+- Display all comments for a specific post.
+- Display all responses for a specific comment.
+- Display all users who liked the post.
+- On behalf of a user, write a comment on a specific post.
+- On behalf of a user, reply to a specific comment.
+
+## Conclusion
+
+You already practiced the most difficult part of databases, designing: creating a database structure and writing basic queries. If you run into problems with release 0, please spend more time studying this topic by watching a [Youtube video](https://www.youtube.com/watch?v=N-sAZB9G9zI) (rus), reading articles on designing. Here are 2 articles that discuss design in sufficient detail ([article 1](https://habr.com/ru/post/535588), [article 2](https://intuit.ru/studies/courses/1001/297/lecture/7409).
+); they have examples and a `Use Cases` section, which may prove .interesting/helpful
+
