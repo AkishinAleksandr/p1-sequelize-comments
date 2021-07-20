@@ -33,5 +33,5 @@ Use your models' methods (write your own or use some standard ones) to:
 
 ## Conclusion
 
-You already practiced the most difficult part of databases, designing: creating a database structure and writing basic queries. If you run into problems with release 0, please spend more time studying this topic by watching a [Youtube video](https://www.youtube.com/watch?v=N-sAZB9G9zI) (rus), reading articles on designing. Here are 2 articles that discuss design in sufficient detail ([article 1](https://habr.com/ru/post/535588), [article 2](https://intuit.ru/studies/courses/1001/297/lecture/7409)); they have examples and a `Use Cases` section, which may prove .interesting/helpful
+You already practiced the most difficult part of databases, designing: creating a database structure and writing basic queries. If you run into problems with release 0, please spend more time studying this topic by watching a [Youtube video](https://www.youtube.com/watch?v=N-sAZB9G9zI) (rus), reading articles on designing. Here are 2 articles that discuss design in sufficient detail ([article 1](https://habr.com/ru/post/535588), [article 2](https://intuit.ru/studies/courses/1001/297/lecture/7409)); they have examples and a `Use Cases` section, which may prove interesting/helpful.
 
